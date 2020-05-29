@@ -1,0 +1,1592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file contains the mapping of keyboard keys to actions within Kodi.              -->
+<!--                                                                                      -->
+<!-- The format is:                                                                       -->
+<!--  <window>                                                                            -->
+<!--    <device>                                                                          -->
+<!--      <button>action</button>                                                         -->
+<!--    </device>                                                                         -->
+<!--  </window>                                                                           -->
+<!--                                                                                      -->
+<!-- The <global> section is a fall through - they will only be used if the button is     -->
+<!-- not used in the current window's section.                                            -->
+<!--                                                                                      -->
+<!-- Actions can be built-in functions.                                                   -->
+<!--  eg <B>ActivateWindow(Music)</B>                                                     -->
+<!-- would automatically go to Music on the press of the B button.                        -->
+<!--                                                                                      -->
+<!--  Long presses                                                                        -->
+<!--   A limitation is that if a single press is mapped in a section, a global "longpress"-->
+<!--   will be ignored. The workaround is to duplicate the long mapping in the section.   -->
+<!--                                                                                      -->
+<!-- An empty action removes the corresponding mapping from default and parent keymaps.   -->
+<!-- This is different from a "noop" action, which disables a button.                     -->
+<!--                                                                                      -->
+<!-- More documentation on keymaps can be found on http://kodi.wiki/view/keymaps          -->
+<keymap>
+  <global>
+    <keyboard>
+	  <i>noop</i>
+	  <t>ActivateWindow(ShutdownMenu)</t>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </global>
+  <LoginScreen>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </LoginScreen>
+  <Home>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </Home>
+  <VirtualKeyboard>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </VirtualKeyboard>
+  <TVChannels>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </TVChannels>
+  <TVRecordings>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </TVRecordings>
+  <TVTimers>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </TVTimers>
+  <TVTimerRules>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </TVTimerRules>
+  <TVGuide>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </TVGuide>
+  <RadioChannels>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </RadioChannels>
+  <RadioRecordings>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </RadioRecordings>
+  <RadioTimers>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </RadioTimers>
+  <RadioTimerRules>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </RadioTimerRules>
+  <RadioGuide>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </RadioGuide>
+  <FileManager>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </FileManager>
+  <MusicPlaylist>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </MusicPlaylist>
+  <MusicPlaylistEditor>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </MusicPlaylistEditor>
+  <Music>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </Music>
+  <FullscreenVideo>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>OSD</n>
+      <n mod="longpress">PlayerProcessInfo</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </FullscreenVideo>
+  <FullscreenGame>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>OSD</n>
+      <n mod="longpress">noop</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </FullscreenGame>
+  <GameOSD>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>OSD</n>
+      <n mod="longpress">noop</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </GameOSD>
+  <VideoTimeSeek>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </VideoTimeSeek>
+  <FullscreenInfo>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>OSD</n>
+      <n mod="longpress">noop</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </FullscreenInfo>
+  <PlayerControls>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </PlayerControls>
+  <Visualisation>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>OSD</n>
+      <n mod="longpress">noop</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </Visualisation>
+  <MusicOSD>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>OSD</n>
+      <n mod="longpress">noop</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </MusicOSD>
+  <VisualisationPresetList>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </VisualisationPresetList>
+  <SlideShow>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </SlideShow>
+  <ScreenCalibration>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </ScreenCalibration>
+  <ScreenCalibration>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </ScreenCalibration>
+  <VideoOSD>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>OSD</n>
+      <n mod="longpress">noop</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </VideoOSD>
+  <VideoMenu>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>OSD</n>
+      <n mod="longpress">PlayerProcessInfo</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </VideoMenu>
+  <OSDVideoSettings>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">PlayerProcessInfo</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </OSDVideoSettings>
+  <OSDAudioSettings>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">PlayerProcessInfo</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </OSDAudioSettings>
+  <VideoBookmarks>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </VideoBookmarks>
+  <Videos>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </Videos>
+  <VideoPlaylist>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </VideoPlaylist>
+  <Pictures>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </Pictures>
+  <ContextMenu>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>Back</n>
+      <n mod="longpress">Back</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </ContextMenu>
+  <MusicInformation>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </MusicInformation>
+  <MovieInformation>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </MovieInformation>
+  <PictureInfo>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </PictureInfo>
+  <Teletext>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </Teletext>
+  <Favourites>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </Favourites>
+  <NumericInput>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </NumericInput>
+  <FullscreenLiveTV>
+    <keyboard>
+      <i>noop</i>
+	  <return>ActivateWindow(PVROSDChannels)</return>
+	  <return mod="longpress">ActivateWindow(PVRChannelGuide)</return>
+	  <f>Back</f>
+      <n>OSD</n>
+      <n mod="longpress">noop</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </FullscreenLiveTV>
+  <FullscreenRadio>
+    <keyboard>
+      <i>noop</i>
+	  <return>ActivateWindow(PVROSDChannels)</return>
+	  <return mod="longpress">ActivateWindow(PVRChannelGuide)</return>
+	  <f>Back</f>
+      <n>OSD</n>
+      <n mod="longpress">noop</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </FullscreenRadio>
+  <FullscreenLiveTvPreview>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </FullscreenLiveTvPreview>
+  <FullscreenRadioPreview>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </FullscreenRadioPreview>
+  <FullscreenLiveTvInput>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </FullscreenLiveTvInput>
+  <FullscreenRadioInput>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </FullscreenRadioInput>
+  <PVROSDChannels>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>Back</n>
+      <n mod="longpress">noop</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </PVROSDChannels>
+  <PVRChannelGuide>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>Back</n>
+      <n mod="longpress">noop</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </PVRChannelGuide>
+  <PVRSettings>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </PVRSettings>
+  <FileBrowser>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </FileBrowser>
+  <ShutdownMenu>
+    <keyboard>
+	  <i>info</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </ShutdownMenu>
+  <AddonInformation>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </AddonInformation>
+  <AddonSettings>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </AddonSettings>
+  <Addon>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </Addon>
+  <Programs>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </Programs>
+  <Settings>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </Settings>
+  <MediaFilter>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </MediaFilter>
+  <Weather>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </Weather>
+  <PlayerProcessInfo>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>PlayerProcessInfo</n>
+      <n mod="longpress">noop</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </PlayerProcessInfo>
+  <TextViewer>
+    <keyboard>
+      <i>noop</i>
+	  <f>Back</f>
+      <n>ContextMenu</n>
+      <n mod="longpress">Menu</n>
+      <d>ActivateWindow(Home)</d>
+	  <d mod="longpress">Stop</d>
+	  <h>Info</h>
+      <e>ActivateWindow(favourites)</e>
+	  <m>noop</m>
+	  <j>ActivateWindow(tvchannels)</j>
+	  <backslash>PlayPause</backslash>
+	  <v>ChapterOrBigStepForward</v>
+	  <comma>ChapterOrBigStepBack</comma>
+	  <two>VolumeUp</two>
+	  <three>VolumeDown</three>
+	  <a>SkipPrevious</a>
+	  <b>SkipNext</b>
+	  <g>Mute</g>
+	  <c>noop</c>
+	  <s mod="longpress">togglefullscreen</s>
+    </keyboard>
+  </TextViewer>
+</keymap>

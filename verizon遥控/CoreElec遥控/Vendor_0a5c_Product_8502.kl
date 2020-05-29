@@ -1,0 +1,33 @@
+#pwr
+# key usage 0x070017 POWER #KEY_T
+key usage 0x070009 BACK  #KEY_I
+key usage 0x070011 MENU  #KEY_D
+
+key usage 0x070016 HOME  #KEY_S
+
+key usage 0x070028 DPAD_CENTER #KEY_ENTER
+key usage 0x070052 DPAD_UP     #KEY_UP
+key usage 0x070050 DPAD_LEFT   #KEY_LEFT
+key usage 0x07004f DPAD_RIGHT  #KEY_RIGHT
+key usage 0x070051 DPAD_DOWN   #KEY_DOWN
+
+key usage 0x07000a VOLUME_MUTE  #KEY_G
+key usage 0x070020 VOLUME_DOWN  #KEY_3
+key usage 0x07001f VOLUME_UP    #KEY_2
+key usage 0x070010 ASSIST #KEY_M
+
+key usage 0x070004 CHANNEL_UP   #KEY_A
+key usage 0x070005 CHANNEL_DOWN #KEY_B
+
+key usage 0x070031 MEDIA_PLAY_PAUSE   #KEY_BACKSLASH
+key usage 0x070019 MEDIA_FAST_FORWARD #KEY_V
+key usage 0x070036 MEDIA_REWIND       #KEY_COMMA
+
+#love
+key usage 0x070008 BOOKMARK   #KEY_E
+
+#info
+key usage 0x07000b APP_SWITCH  #KEY_H
+
+#exit
+key usage 0x070007 SLEEP       #KEY_D
